@@ -1,4 +1,4 @@
-# README - Aplicación de Carga de Archivos con POO en Python
+# Aplicación de Carga de Archivos con POO en Python
 
 ## Estructura del Proyecto
 
