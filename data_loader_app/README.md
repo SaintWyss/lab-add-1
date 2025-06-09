@@ -6,7 +6,7 @@ Este proyecto consiste en una aplicación modular desarrollada en Python que per
 
 ### 1. `main.py` - Punto de entrada de la aplicación
 
-Archivo principal que se ejecuta con `python main.py`. Realiza las siguientes acciones:
+Archivo principal que se ejecuta con `python -m data_loader_app.main`. Esto es necesario porque los imports son relativos al paquete. Realiza las siguientes acciones:
 
 - Inicializa la base de datos.
 - Escanea los archivos en el directorio `files/`.
@@ -65,6 +65,8 @@ Contiene las librerías necesarias para ejecutar la aplicación:
 pandas==2.2.1
 openpyxl==3.1.2
 sqlalchemy==2.0.30
+requests==2.31.0
+pyodbc==4.0.39
 ```
 
 ---
@@ -111,7 +113,7 @@ Desarrollar una aplicación modular en Python que permita:
 
 ### Flujo de ejecución
 
-1. Ejecutar `main.py`.
+1. Ejecutar `python -m data_loader_app.main`.
 2. Escaneo automático de archivos en `files/`.
 3. Validación de cada archivo.
 4. Inserción en tablas correspondientes.
